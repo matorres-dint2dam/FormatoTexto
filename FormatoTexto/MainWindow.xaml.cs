@@ -30,9 +30,37 @@ namespace FormatoTexto
             resultado.Text=caja.Text;
         }
 
+        private void Cursiva_Checked(object sender, RoutedEventArgs e)
+        {
+            resultado.FontStyle =FontStyles.Italic; 
+        }
+
+        private void Cursiva_Unchecked(object sender, RoutedEventArgs e)
+        {
+            resultado.FontStyle = FontStyles.Normal;
+        }
         private void Negrita_Checked(object sender, RoutedEventArgs e)
         {
-            resultado.FontStyle =; 
+            resultado.FontWeight = FontWeights.Bold;
+        }
+
+        private void Negrita_Unchecked(object sender, RoutedEventArgs e)
+        {
+            resultado.FontWeight = FontWeights.Normal;
+        }
+
+        private void Azul_Checked(object sender, RoutedEventArgs e)
+        {
+            resultado.Foreground = Brushes.Blue;
+        }
+
+        private void Verde_Checked(object sender, RoutedEventArgs e)
+        {
+            resultado.Foreground = Brushes.Green;
+        }
+        private void Rojo_Checked(object sender, RoutedEventArgs e)
+        {
+            resultado.Foreground = Brushes.Red;
         }
     }
 }
